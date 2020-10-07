@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Switch, Route, Link} from 'react-router-dom';
+import {Switch, Route, Redirect} from 'react-router-dom';
 import Welcome from './components/Welcome';
 import Game from './components/Game';
 import Records from './components/Records';
@@ -16,7 +16,9 @@ function App() {
         <Route path='/records' component={Records}/>
         <Route path='/profile' component={Profile}/>
         <Route path='/congratulations' component={Congratulations}/>
-        <Route path='/' component={Welcome}/>
+        <Route exact path='/'>
+        <Redirect to='/welcome'/>
+        </Route>
       </Switch>
     </div>
   );
