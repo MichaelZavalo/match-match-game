@@ -1,11 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .App {
   text-align: center;
 }
 
+/* Welcome page */
 .welcome {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome-name-of-the-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 4px 4px 30px rgba(48, 150, 150, 1);
+}
+
+.welcome-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.welcome-form-input {
+  width: 200px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 10px;
+  color: #fff;
+  background: #063366;
+  border:none;
+}
+
+.welcome-form-input:first-of-type {
+  margin-top: 0px;
+}
+
+.welcome-selectDifficult {
+  width: 210px;
+  background: rgb(197, 51, 51);
+  margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.welcome-cardShirts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.welcome-cardShirts>span {
+  font-size: 25px;
+  color: #8c97a3;
+}
+
+.welcome-cardShirts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.btn {
   width: 100px;
-  height: 100px;
-  background-color: rgb(50, 230, 230);
+  height: 50px;
+  color: #fff;
+  background: inherit;
+  border: 2px solid #ff2211;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px -14px 129px -20px rgba(0, 0, 0, 0.82);
+  -moz-box-shadow: 0px -14px 129px -20px rgba(0, 0, 0, 0.82);
+  box-shadow: 0px -14px 129px -20px rgba(0, 0, 0, 0.82);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ff2211;
+}
+
+.welcome-rules {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  background: rgb(80 8 159 / 0.12);
+  opacity: 0.8;
+}
+
+.welcome-rules-h3 {
+  font-size: 35px;
+  color: #8c97a3;
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+.welcome-rules-p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.welcome-startBtn {
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .game {
@@ -19,14 +130,15 @@
   height: 100px;
   background-color: rgb(0, 0, 0);
 }
+
 .records {
   width: 100px;
   height: 100px;
   background-color: rgb(201, 55, 10);
 }
+
 .profile {
   width: 100px;
   height: 100px;
   background-color: rgb(211, 24, 195);
 }
-

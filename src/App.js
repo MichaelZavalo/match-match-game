@@ -17,7 +17,7 @@ function App() {
         <Route path='/profile' component={Profile}/>
         <Route path='/congratulations' component={Congratulations}/>
         <Route exact path='/'>
-        <Redirect to='/welcome'/>
+          <Redirect to='/welcome'/>
         </Route>
       </Switch>
     </div>
