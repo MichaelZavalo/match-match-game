@@ -1,11 +1,11 @@
 import React from 'react';
-import Difficult from './Difficult';
-import CardShirt from './CardShirt';
-import Form from './Form';
-import HeaderWelcome from './HeaderWelcome';
-import Rules from './Rules';
-import StartGameBtn from './StartGameBtn';
-import '../App.css';
+import Difficult from '../Welcome-pg/components/Difficult';
+import CardShirt from '../Welcome-pg/components/CardShirt';
+import Form from '../Welcome-pg/components/Form';
+import HeaderWelcome from '../Welcome-pg/components/HeaderWelcome';
+import Rules from '../Welcome-pg/components/Rules';
+import StartGameBtn from '../Welcome-pg/components/StartGameBtn';
+
 
 export default class Welcome extends React.Component{
     constructor(props) {
